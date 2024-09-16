@@ -1,6 +1,7 @@
 import Image from "next/image";
-import Footer from "./components/footer/footer";
-import Header from "./components/header/header";
+import Footer from "@/app/components/footer";
+import Header from "@/app/components/header";
+import HomeBanner from "@/app/components/home/banner";
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
         <Header />
       </header>
       <main className="min-h-screen">
-        <h1 className="decoration-slate-600">Body</h1>
+        <HomeBanner />
       </main>
       <footer className="">
         <Footer />
