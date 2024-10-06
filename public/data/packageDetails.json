@@ -1,0 +1,76 @@
+{
+  "packageDetails": [
+    {
+      "isNew": false,
+      "imageURL": "/media/packages/dubai.jpg",
+      "name": "Dubai Dreamscape",
+      "rating": 4.5,
+      "price": 1800,
+      "description": "Discover the glamour and grandeur of Dubai! This package takes you through the stunning Burj Khalifa, the magical desert safari, and luxurious shopping experiences. Enjoy a dhow cruise dinner and explore the gold souks. Dubai is a mix of tradition and futuristic marvels, offering a perfect blend of relaxation and adventure."
+    },
+    {
+      "isNew": false,
+      "imageURL": "/media/packages/bali.jpg",
+      "name": "Bali Bliss Retreat",
+      "rating": 4.5,
+      "price": 3000,
+      "description": "Immerse yourself in the tropical paradise of Bali. This package includes visits to breathtaking beaches, lush rice terraces, and ancient temples. Enjoy the tranquility of Ubud’s spa culture, traditional Balinese dances, and scenic sunrise views from Mount Batur. A perfect escape for nature lovers and adventurers alike."
+    },
+    {
+      "isNew": false,
+      "imageURL": "/media/packages/mauritius.jpg",
+      "name": "Mauritius Marvel",
+      "rating": 5,
+      "price": 2500,
+      "description": "Explore the jewel of the Indian Ocean with this exclusive package. From white sandy beaches to volcanic mountains, Mauritius offers a perfect mix of adventure and serenity. Swim with dolphins, visit botanical gardens, and indulge in the multicultural cuisine. Ideal for honeymooners and nature lovers."
+    },
+    {
+      "isNew": false,
+      "imageURL": "/media/packages/miami.jpg",
+      "name": "Miami Sun & Sea Escape",
+      "rating": 4.5,
+      "price": 2500,
+      "description": "Get ready for a vibrant and energetic vacation in Miami! This package includes sun-soaked days on South Beach, exhilarating boat tours, and an exploration of Little Havana’s rich Cuban culture. Miami offers a fusion of beach life, nightlife, and rich history, making it an unforgettable getaway."
+    },
+    {
+      "isNew": false,
+      "imageURL": "/media/packages/usa.jpg",
+      "name": "USA Explorer",
+      "rating": 4.5,
+      "price": 2900,
+      "description": "Embark on an epic journey across the United States! This package offers a customizable tour through the bustling cities of New York, the grandeur of the Grand Canyon, and the serenity of Yellowstone. Whether you're looking for adventure, history, or modern wonders."
+    },
+    {
+      "isNew": false,
+      "imageURL": "/media/packages/agra.jpg",
+      "name": "Agra Heritage Journey",
+      "rating": 4.5,
+      "price": 1500,
+      "description": "Explore India’s most iconic landmark, the Taj Mahal, with our Agra Heritage package. In addition to the Taj Mahal, visit the Agra Fort and Fatehpur Sikri, experiencing Mughal splendor. This package offers a deep dive into India’s rich history, perfect for cultural enthusiasts and history buffs."
+    },
+    {
+      "isNew": false,
+      "imageURL": "/media/packages/andaman.jpg",
+      "name": "Andaman Island Adventure",
+      "rating": 5,
+      "price": 2000,
+      "description": "Discover the untouched beauty of the Andaman Islands. With crystal-clear waters, exotic marine life, and thrilling water sports, this package offers the perfect escape into nature. Explore Havelock Island, snorkel in pristine coral reefs, and enjoy sun-kissed beaches far from the crowds. Plus, visit the historic Cellular Jail."
+    },
+    {
+      "isNew": false,
+      "imageURL": "/media/packages/goa.jpg",
+      "name": "Goa Beach Fiesta",
+      "rating": 4.5,
+      "price": 2500,
+      "description": "Dive into the laid-back charm of Goa’s beaches and party culture. This package features iconic beaches, bustling flea markets, Portuguese architecture, and delicious seafood. Whether you seek adventure sports or peaceful sunsets, Goa is perfect for every traveler who loves the sea, music, and fun."
+    },
+    {
+      "isNew": false,
+      "imageURL": "/media/packages/rajasthan.jpg",
+      "name": "Rajasthan Royal Tour",
+      "rating": 4.5,
+      "price": 1500,
+      "description": "Step into a royal journey through Rajasthan’s palaces and forts. This package includes the enchanting cities of Jaipur, Udaipur, and Jodhpur, where you’ll experience grand architecture, vibrant markets, and traditional Rajasthani hospitality. A perfect adventure for history lovers and those seeking cultural richness."
+    }
+  ]
+}

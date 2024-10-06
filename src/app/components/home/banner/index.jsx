@@ -11,7 +11,7 @@ import {
   Box,
 } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
-import packagesData from "../../../../../public/data/packageData.json"
+import packagesData from "../../../../../public/data/voyagePackages.json"
 
 export default function HomeBanner() {
     const {voyagePackages} = packagesData;

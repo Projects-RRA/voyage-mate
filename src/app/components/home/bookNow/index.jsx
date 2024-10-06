@@ -16,7 +16,7 @@ import {
   Select,
   useToast,
 } from "@chakra-ui/react";
-import packagesData from "../../../../../public/data/packageData.json";
+import packagesData from "../../../../../public/data/voyagePackages.json";
 
 const BookNowSection = ({ text, icon, iconBg }) => {
   return (
@@ -98,6 +98,7 @@ export default function BookNow() {
             alt={"Couple enjoying at the beach"}
             src={"/media/other/boookNowSecImage.jpg"}
             objectFit={"cover"}
+            loading={"lazy"}
           />
         </Flex>
         <div class="p-7 border-solid border-2 rounded-md">
