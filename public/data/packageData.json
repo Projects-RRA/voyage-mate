@@ -1,0 +1,15 @@
+{
+    "voyagePackages" : [
+        {
+            "place": "Bali"
+        },        {
+            "place": "Dubai"
+        },        {
+            "place": "Mauritius"
+        },        {
+            "place": "Goa"
+        },        {
+            "place": "Fiji"
+        }
+    ]
+}

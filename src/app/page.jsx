@@ -1,16 +1,15 @@
-import Image from "next/image";
 import Footer from "@/app/components/footer";
 import Header from "@/app/components/header";
-import HomeBanner from "@/app/components/home/banner";
+import Home from "@/app/components/home";
 
-export default function Home() {
+export default function Page() {
   return (
     <div className="">
       <header>
         <Header />
       </header>
       <main className="min-h-screen">
-        <HomeBanner />
+        <Home />
       </main>
       <footer className="">
         <Footer />
