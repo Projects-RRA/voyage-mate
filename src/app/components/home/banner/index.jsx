@@ -11,11 +11,14 @@ import {
   Box,
 } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
+import packagesData from "../../../../../public/data/packageData.json"
 
 export default function HomeBanner() {
-    const countries = ["Bali", "Dubai", "Mauritius", "Goa", "Fiji"];
+    const {voyagePackages} = packagesData;
+    const countries = voyagePackages?.map(pkg => pkg.place);
+
     const [currentIndex, setCurrentIndex] = useState(0);
-  
+    
     useEffect(() => {
       const interval = setInterval(() => {
         /**
@@ -27,7 +30,7 @@ export default function HomeBanner() {
       }, 2000); // Change country every 2 seconds
   
       return () => clearInterval(interval); // Cleanup on unmount to avoid memory leak
-    }, []);
+    }, [countries.length]);
   return (
     <Flex
       w={"full"}
