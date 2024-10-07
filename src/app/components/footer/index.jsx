@@ -1,70 +1,123 @@
 "use client";
 
+import { ReactNode } from "react";
+
 import {
   Box,
-  chakra,
   Container,
+  SimpleGrid,
   Stack,
   Text,
   useColorModeValue,
-  VisuallyHidden,
 } from "@chakra-ui/react";
-import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import Image from "next/image";
 
-const SocialButton = ({ children, label, href }) => {
+const ListHeader = ({ children }) => {
   return (
-    <chakra.button
-      bg={useColorModeValue("blackAlpha.100", "whiteAlpha.100")}
-      rounded={"full"}
-      w={8}
-      h={8}
-      cursor={"pointer"}
-      as={"a"}
-      href={href}
-      display={"inline-flex"}
-      alignItems={"center"}
-      justifyContent={"center"}
-      transition={"background 0.3s ease"}
-      _hover={{
-        bg: useColorModeValue("blackAlpha.200", "whiteAlpha.200"),
-      }}
-    >
-      <VisuallyHidden>{label}</VisuallyHidden>
+    <Text fontWeight={"500"} fontSize={"lg"} mb={2}>
       {children}
-    </chakra.button>
+    </Text>
   );
 };
 
-export default function Footer() {
+export default function LargeWithLogoLeft() {
   return (
     <Box
       bg={useColorModeValue("gray.50", "gray.900")}
       color={useColorModeValue("gray.700", "gray.200")}
     >
-      <Container
-        as={Stack}
-        maxW={"6xl"}
-        py={4}
-        direction={{ base: "column", md: "row" }}
-        spacing={4}
-        justify={{ base: "center", md: "space-between" }}
-        align={{ base: "center", md: "center" }}
-      >
-        <Text>
-          ©{new Date().getFullYear()} Voyage Mate. All rights reserved
-        </Text>
-        <Stack direction={"row"} spacing={6}>
-          <SocialButton label={"Twitter"} href={"#"}>
-            <FaXTwitter />
-          </SocialButton>
-          <SocialButton label={"YouTube"} href={"#"}>
-            <FaYoutube />
-          </SocialButton>
-          <SocialButton label={"Instagram"} href={"#"}>
-            <FaInstagram />
-          </SocialButton>
-        </Stack>
+      <Container as={Stack} maxW={"6xl"} py={10}>
+        <SimpleGrid
+          templateColumns={{ sm: "1fr 1fr", md: "2fr 1fr 1fr 1fr 1fr" }}
+          spacing={8}
+        >
+          <Stack spacing={6}>
+            <Box>
+              <Image
+                src="/media/logo/logo.png"
+                alt="Logo"
+                width={200}
+                height={10}
+                loading="lazy"
+              />
+            </Box>
+            <Text fontSize={"sm"}>
+              ©{new Date().getFullYear()} Voyage Mate. All rights reserved
+            </Text>
+          </Stack>
+          <Stack align={"flex-start"}>
+            <ListHeader>Product</ListHeader>
+            <Box as="a" href={"#"}>
+              Overview
+            </Box>
+            <Box as="a" href={"#"}>
+              Features
+            </Box>
+            <Box as="a" href={"#"}>
+              Tutorials
+            </Box>
+            <Box as="a" href={"#"}>
+              Pricing
+            </Box>
+            <Box as="a" href={"#"}>
+              Releases
+            </Box>
+          </Stack>
+          <Stack align={"flex-start"}>
+            <ListHeader>Company</ListHeader>
+            <Box as="a" href={"#"}>
+              About
+            </Box>
+            <Box as="a" href={"#"}>
+              Press
+            </Box>
+            <Box as="a" href={"#"}>
+              Careers
+            </Box>
+            <Box as="a" href={"#"}>
+              Contact
+            </Box>
+            <Box as="a" href={"#"}>
+              Partners
+            </Box>
+          </Stack>
+          <Stack align={"flex-start"}>
+            <ListHeader>Support</ListHeader>
+            <Box as="a" href={"#"}>
+              Help Center
+            </Box>
+            <Box as="a" href={"#"}>
+              Terms of Service
+            </Box>
+            <Box as="a" href={"#"}>
+              Legal
+            </Box>
+            <Box as="a" href={"#"}>
+              Privacy Policy
+            </Box>
+            <Box as="a" href={"#"}>
+              Status
+            </Box>
+          </Stack>
+          <Stack align={"flex-start"}>
+            <ListHeader>Follow Us</ListHeader>
+            <Box as="a" href={"#"}>
+              Facebook
+            </Box>
+            <Box as="a" href={"#"}>
+              Twitter
+            </Box>
+            <Box as="a" href={"#"}>
+              Dribbble
+            </Box>
+            <Box as="a" href={"#"}>
+              Instagram
+            </Box>
+            <Box as="a" href={"#"}>
+              LinkedIn
+            </Box>
+          </Stack>
+        </SimpleGrid>
       </Container>
     </Box>
   );
