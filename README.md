@@ -1,36 +1,50 @@
+# VoyageMate - Tourism Package Booking Website
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+## Installation
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+To get started with VoyageMate, follow these steps:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. **Clone the repository:**
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+   Clone the project to your local machine:
+   
+   `git clone https://github.com/Projects-RRA/voyage-mate.git`
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+   Then, navigate to the project folder:
+   
+   `cd voyage-mate`
+
+2. **Install dependencies:**
+
+   Install all required dependencies using Yarn:
+   
+   `yarn install`
+
+3. **Run the development server:**
+
+   Start the local development server:
+   
+   `yarn dev`
+
+   The app will be running at `http://localhost:3000`. Open it in your browser.
+
+## Building for Production
+
+To build the app for production, run:
+
+`yarn build`
+
+After building, you can start the production server with:
+
+`yarn start`
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+To learn more about the technologies used in this project, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [Next.js Documentation](https://nextjs.org/docs) - Learn about Next.js features and API.
+- [Chakra UI Documentation](https://chakra-ui.com/docs) - Learn how to build UI with Chakra UI.
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs) - Explore Tailwind CSS for styling.
