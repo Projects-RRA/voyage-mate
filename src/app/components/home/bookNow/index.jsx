@@ -90,7 +90,7 @@ export default function BookNow() {
   };
 
   return (
-    <Container maxW={"5xl"} py={12}>
+    <Container maxW={"5xl"} py={12} id="book-section">
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
         <Flex>
           <Image

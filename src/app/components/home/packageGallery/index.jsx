@@ -14,6 +14,7 @@ import {
 } from "@chakra-ui/react";
 import { BsStar, BsStarFill, BsStarHalf } from "react-icons/bs";
 import packageInfo from "../../../../../public/data/packageDetails.json";
+import { scrollToSection } from "@/app/utility";
 
 function Rating({ rating, numReviews }) {
   return (
@@ -53,6 +54,7 @@ function PackageGallery() {
         p={2}
         rounded={"md"}
         className="w-fit m-auto"
+        id="packages-section"
       >
         Packages
       </Text>
@@ -148,6 +150,7 @@ function PackageGallery() {
                   _hover={{
                     bg: "#004aad",
                   }}
+                  onClick={() => scrollToSection('book-section')}
                 >
                   Book Now
                 </Button>

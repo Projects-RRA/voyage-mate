@@ -46,24 +46,6 @@ export default function LargeWithLogoLeft() {
             </Text>
           </Stack>
           <Stack align={"flex-start"}>
-            <ListHeader>Product</ListHeader>
-            <Box as="a" href={"#"}>
-              Overview
-            </Box>
-            <Box as="a" href={"#"}>
-              Features
-            </Box>
-            <Box as="a" href={"#"}>
-              Tutorials
-            </Box>
-            <Box as="a" href={"#"}>
-              Pricing
-            </Box>
-            <Box as="a" href={"#"}>
-              Releases
-            </Box>
-          </Stack>
-          <Stack align={"flex-start"}>
             <ListHeader>Company</ListHeader>
             <Box as="a" href={"#"}>
               About

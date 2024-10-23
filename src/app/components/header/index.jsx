@@ -24,6 +24,7 @@ import {
 } from "@chakra-ui/icons";
 import Image from "next/image";
 import Link from "next/link";
+import { scrollToSection } from "@/app/utility";
 
 export default function Header() {
   const { isOpen, onToggle } = useDisclosure();
@@ -169,7 +170,7 @@ const DesktopNav = () => {
               </Popover>
             ) : (
               // If no children, render the nav item without Popover
-              <Link href={navItem.href}>{navItem.label}</Link>
+              <Link href={"#"} onClick={() => scrollToSection(navItem.href)}>{navItem.label}</Link>
             )}
           </React.Fragment>
         </Box>
@@ -244,7 +245,7 @@ const MobileNavItem = ({ label, children, href }) => {
       <Box
         py={2}
         as="a"
-        href={href ?? "#"}
+        onClick={() => scrollToSection(href)}
         justifyContent="space-between"
         alignItems="center"
         className="flex flex-row w-20"
@@ -292,7 +293,7 @@ const NAV_ITEMS = [
   },
   {
     label: "Book",
-    href: "#",
+    href: "book-section",
   },
   {
     label: "Packages",
@@ -318,14 +319,14 @@ const NAV_ITEMS = [
   },
   {
     label: "Services",
-    href: "#",
+    href: "services-section",
   },
   {
     label: "Gallery",
-    href: "#",
+    href: "gallery-section",
   },
   {
     label: "About",
-    href: "#",
+    href: "about-section",
   },
 ];
