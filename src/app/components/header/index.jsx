@@ -62,14 +62,15 @@ export default function Header() {
           justify={{ base: "center", md: "start" }}
           className="items-center"
         >
-          <Image
-            src="/media/logo/logo.png"
-            alt="Logo"
-            width={200}
-            height={100}
-            loading="lazy"
-          />
-
+          <Link href={'/'}>
+            <Image
+              src="/media/logo/logo.png"
+              alt="Logo"
+              width={200}
+              height={100}
+              loading="lazy"
+            />
+          </Link>
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
             <DesktopNav />
           </Flex>
@@ -90,7 +91,7 @@ export default function Header() {
             fontSize={"sm"}
             fontWeight={400}
             variant={"link"}
-            href={"#"}
+            href={"/login"}
           >
             Sign In
           </Button>
@@ -101,12 +102,12 @@ export default function Header() {
             fontWeight={600}
             color={"white"}
             bg={"#038aed"}
-            href={"#"}
+            href={"/register"}
             _hover={{
               bg: "#004aad",
             }}
           >
-            Sign Up
+            Register
           </Button>
         </Stack>
       </Flex>
@@ -170,7 +171,9 @@ const DesktopNav = () => {
               </Popover>
             ) : (
               // If no children, render the nav item without Popover
-              <Link href={"#"} onClick={() => scrollToSection(navItem.href)}>{navItem.label}</Link>
+              <Link href={"#"} onClick={() => scrollToSection(navItem.href)}>
+                {navItem.label}
+              </Link>
             )}
           </React.Fragment>
         </Box>
@@ -289,7 +292,7 @@ const MobileNavItem = ({ label, children, href }) => {
 const NAV_ITEMS = [
   {
     label: "Home",
-    href: "#",
+    href: "/",
   },
   {
     label: "Book",
