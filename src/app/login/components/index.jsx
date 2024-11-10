@@ -39,7 +39,7 @@ export default function LoginScreen() {
         duration: 3000,
         isClosable: true,
       });
-      router.push("/home");
+      router.push("/");
     } else {
       toast({
         title: result.message,
